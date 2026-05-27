@@ -1,0 +1,108 @@
+:root {
+  --color-primary: #2d6cdf;
+  --color-primary-light: #5f8ff2;
+  --color-primary-dark: #1e4aa5;
+  --color-accent: #ff7a59;
+  --color-gray-50: #f8f9fb;
+  --color-gray-100: #eef0f5;
+  --color-gray-200: #e2e6ef;
+  --color-gray-300: #cbd1df;
+  --color-gray-400: #9aa3b5;
+  --color-gray-500: #6d7688;
+  --color-gray-600: #4a5161;
+  --color-gray-700: #353b4a;
+  --color-gray-800: #1f2433;
+  --color-gray-900: #121725;
+  --color-gray-950: #0b0f1a;
+  --color-success: #12986a;
+  --color-warning: #e49e2a;
+  --color-error: #c64641;
+  --color-bg: #f6f7fb;
+  --color-surface: #ffffff;
+  --color-surface-elevated: #f8f9fe;
+  --color-border: #e4e8f2;
+  --color-text-primary: #121725;
+  --color-text-secondary: #3d4454;
+  --color-text-muted: #6d7688;
+
+  --shadow-xs: 0 6px 12px rgba(15, 23, 42, 0.06);
+  --shadow-sm: 0 10px 18px rgba(15, 23, 42, 0.08);
+  --shadow-md: 0 18px 36px rgba(15, 23, 42, 0.12);
+  --shadow-lg: 0 28px 52px rgba(15, 23, 42, 0.16);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--color-text-primary);
+  background: var(--color-bg);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0 0 8px;
+  color: var(--color-text-primary);
+}
+
+p {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button, input, select {
+  font-family: inherit;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid rgba(45, 108, 223, 0.5);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
