@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import './App.css';
 
-const BASE_URL = 'http://110.172.28.19:8080';
+const BASE_URL = '';
 const DEFAULT_PAGE = 'landing';
 
 function App() {
